@@ -6,7 +6,8 @@ public class Lala {
 
         System.out.println("Jambi Butuk");
         int l = 7;
-        boolean a = false;
+        boolean a = true;
+        char m = a;
         
     }
 }
