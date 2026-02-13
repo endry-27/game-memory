@@ -1,2 +1,4 @@
-aiu
+public class MatchCard {
+    
+}
   
