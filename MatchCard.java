@@ -1,8 +1,5 @@
-//import java.awt.*;
-//import java.awt.event.*;
 import java.util.ArrayList;
-//import java.util.Random;
-//import javax.swing.*;
+import java.util.Random;
 
 public class MatchCard {
     // sun.font.FontDesignMetrics a;
@@ -27,11 +24,12 @@ public class MatchCard {
         }
 
         public String toString() {
-            return value + " of " + type;
+            return value + " - " + type;
         }
     }
 
     ArrayList<Card> deck;
+    Random random = new Random();
 
     MatchCard () {
         startGame();
@@ -39,11 +37,12 @@ public class MatchCard {
 
     public void startGame() {
         buildDeck();
+        shuffleDeck();
     }
 
     public void buildDeck() {
         deck = new ArrayList<Card>();
-        String[] types = {"Hearts", "Diamonds", "Clubs", "Spades"};
+        String[] types = {"H", "D", "C", "S"};
         String[] values = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
         for (int i = 0; i < types.length; i++) {
@@ -55,6 +54,21 @@ public class MatchCard {
         System.out.println("Deck built with ");
         System.out.println(deck);
     }
+
+    public void shuffleDeck() {
+        for (int i = 0; i < deck.size(); i++) {
+            int j = random.nextInt(deck.size());
+            
+            Card currcard = deck.get(i);
+            Card randomCard = deck.get(j);
+            deck.set(i, randomCard);
+            deck.set(j, currcard);
+        }
+        System.out.println("Deck Diacak");
+        System.out.println(deck);
+    }
+            
+}
 
 
             
