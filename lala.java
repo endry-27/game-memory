@@ -1,2 +1,0 @@
-Woi budak jambi
-mkmkmkmkmmkkmmkmmm
