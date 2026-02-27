@@ -124,7 +124,7 @@ public class main {
             case 1:
                 int ran=r.nextInt(22);
                 System.out.println("MASA LALU MU MENGATAKAN :");
-                artitarot a= new artitaro(NAMAARCANA.get(ran),majorArcanapast.get(ran));
+                artitarot a= new artitarot(NAMAARCANA.get(ran),majorArcanapast.get(ran));
                 a.showkartu();
                 lihat--;
                 
@@ -132,7 +132,7 @@ public class main {
             case 2:
                 int rran=r.nextInt(22);
                 System.out.println("MASA KINI MU MENGATAKAN");
-                artitarot b= new artitaro(NAMAARCANA.get(rran),majorArcanapresent.get(rran));
+                artitarot b= new artitarot(NAMAARCANA.get(rran),majorArcanapresent.get(rran));
                 b.showkartu();
                 lihat--;
                 
@@ -140,7 +140,7 @@ public class main {
             case 3:
                 int rrran=r.nextInt(22);
                 System.out.println("MASA DEPAN MU MENGATAKAN");
-                artitarot c= new artitaro(NAMAARCANA.get(rrran),majorArcanapast.get(rrran));
+                artitarot c= new artitarot(NAMAARCANA.get(rrran),majorArcanapast.get(rrran));
                 c.showkartu();
                 lihat--;
 
