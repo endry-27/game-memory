@@ -13,6 +13,8 @@ public class main {
         ArrayList<String> majorArcanafuture = new ArrayList<>();
         ArrayList<String> NAMAARCANA = new ArrayList<>();
         
+
+
         
        
       // NAMA ARCANA
@@ -115,8 +117,9 @@ public class main {
          
         int lihat=3;      
         System.out.println("selmat datang di ramalan tarot");
-        System.out.println("Sekerang saya ada 21 kartu dan anda akan memilih 3 secara acak \n nah anda mau melihat \n1.masa depan\n2.masa kini\n3.masa lampau?");
-    do{
+        System.out.println("Sekarang saya ada 21 kartu dan anda akan memilih 3 secara acak \n nah anda mau melihat \n1.masa depan\n2.masa kini\n3.masa lampau?");
+        
+        do{
  
         int pil = s.nextInt();
         

@@ -1,10 +1,10 @@
 class tarot {
 
-    protected String namakartu;
+   protected String namakartu; 
 
     tarot(String namakartu) {
       this.namakartu=namakartu;
-    
+
   }
 
   public void showkartu(){
